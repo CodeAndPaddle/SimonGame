@@ -37,7 +37,7 @@ function animatePress(currentColour){
     setTimeout(function(){$("#" + currentColour).removeClass("pressed")}, 100);
 }
 
-$(document).on("keypress",function(){
+$(document).on("keypress click",function(){
     if(firstTime){
         setTimeout(function(){nextSequence();},200);
         firstTime = false;
